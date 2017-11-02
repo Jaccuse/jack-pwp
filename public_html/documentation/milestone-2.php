@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <title>Jack's PWP</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
         <main>
