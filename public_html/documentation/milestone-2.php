@@ -6,10 +6,8 @@
     </head>
     <body>
         <main>
-            <p>
-                <h2>Content Strategy</h2>
-                This website will be a showcase of my skills that I am learning. The main content will be in the middle of the page with a navbar on the side. My relevant social media links will be at the bottom.
-            </p>
+            <h2>Content Strategy</h2>
+            This website will be a showcase of my skills that I am learning. The main content will be in the middle of the page with a navbar on the side. My relevant social media links will be at the bottom.
         </main>
     </body>
 </html>
