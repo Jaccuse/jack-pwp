@@ -16,3 +16,18 @@ Your code looks pretty good overall, and your project has been set up correctly.
 ### Edits &amp; Suggestions
 - No need to place those `<ul>`s inside a `<p>` tag. I would avoid this going forward.
 - Same with the `<h2>` tags... I would move those outside of the `<p>` tags.
+
+## Milestone 2&alpha; Feedback
+This is a start - I'm just concerned as to whether the wireframes are detailed enough to guide your development. 
+
+I don't see the side navigation anywhere in the wireframes, and I'm curious as to how you plan to handle this on mobile. There is definitely more room for detail in the content strategy. You could elaborate on your plan for content in the "Who I Am", "Work I've Done", and "Things I Do" sections. Also, what is going to live inside the header and footer? If there's nothing you plan to put there, then why do they exist? I see that you've removed the "Things I Do" section from the mobile wireframe. I'm not sure if this is intentional or just a mistake.
+
+Overall the scale is good on mobile, and the layout plan you have should be pretty simple using Bootstrap. I would have liked to know more about your side navigation ideas - that way I could have suggested a tool or plugin that might work nicely for that. I'm not sure what tool you used to create these wireframes, but I think something like Mockflow's browser/phone templates and drag-and-drop UI components would have worked much better for you. Please take note that for a capstone-level project, the wireframes would need to be much more detailed.
+
+I think you might have a much clearer plan in your mind for your PWP layout than what is currently here. In that case you might be ok. But if not, I would recommend finalizing things in a bit more detail before you begin coding PWP. Also I would recommend revisiting the Bootstrap Challenge and seeing if you can get a little further along before you begin too. Please see Edits &amp; Suggestions below.
+
+Your Milestone 2a passes at [Tier II](https://bootcamp-coders.cnm.edu/projects/personal/rubric/). You're clear to start development on PWP whenever you're ready to begin. 
+
+### Edits &amp; Suggestions
+- Move your `/images` directory inside `public_html/documentation`. When you begin building your PWP, those images will do inside a `public_html/imgaes` directory.
+- Avoid absolute links to internal assets (see lines 12,13 in HTML). Use _relative_ links instead. More info here: [MDN: Absolute vs Relative URLs](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL#Absolute_URLs_vs_relative_URLs)
