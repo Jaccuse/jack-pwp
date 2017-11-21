@@ -6,6 +6,15 @@
     max-width: 55rem;
 }
 
+.h1 {
+    padding-bottom: 2rem;
+}
+
+#jumbotron-text {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 .card {
     width: 15rem;
     margin-top: 2rem;
