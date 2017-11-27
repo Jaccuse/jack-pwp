@@ -1,6 +1,15 @@
+body {
+    background-color: #FFFFFF;
+}
+
 .container {
     max-width: 55rem;
-    background-color: #858585
+    background-color: #858585;
+    margin-bottom: 3rem;
+}
+
+#header-jumbotron {
+    padding: 0;
 }
 
 .jumbotron {
@@ -12,10 +21,10 @@
 }
 
 .h1 {
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
-#jumbotron-text {
+p {
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -23,4 +32,6 @@
 .card {
     width: 15rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 0;
 }

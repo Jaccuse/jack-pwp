@@ -8,49 +8,42 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="../public_html/documentation/style.css"/>
+        <!-- jQuery Form, Additional Methods, Validate -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+        <!-- Your JavaScript Form Validator -->
+        <script src="js/form-validate.js"></script>
+        <!-- Google reCAPTCHA -->
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     <body>
         <div class="container">
             <header>
-                <div class="jumbotron jumbotron-fluid text-white bg-dark">
+                <!--<div class="jumbotron jumbotron-fluid text-white bg-dark">
                     <h1 class="display-3 d-flex justify-content-center">Hello, world!</h1>
-                    <p class="lead" id="jumbotron-text">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <p class="lead" id="header-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin odio felis, laoreet sit amet ultricies ac, varius id sapien. Praesent tristique condimentum mauris, quis vulputate nulla volutpat et. Donec purus orci, eleifend ac porttitor et, sodales a urna. Praesent molestie ut nisl ut facilisis.</p>
                     <hr class="my-4 d-flex justify-content-center">
-
-                    <p class="lead d-flex justify-content-center">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                    </p>
-                </div>
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link2</a>
-                            </li>
-                        </ul>
+                </div>-->
+                <div class="body d-flex justify-content-around">
+                    <div class="row">
+                        <div class="jumbotron jumbotron-fluid text-white bg-dark bg" id="header-jumbotron">
+                            <img src="../images/jack-invictus.png" class="img-fluid" alt="picture of jack and teammates">
+                            <h1 class="display-3 d-flex justify-content-center">Hello, world!</h1>
+                            <p class="lead" id="header-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin odio felis, laoreet sit amet ultricies ac, varius id sapien. Praesent tristique condimentum mauris, quis vulputate nulla volutpat et. Donec purus orci, eleifend ac porttitor et, sodales a urna. Praesent molestie ut nisl ut facilisis.</p>
+                        </div>
                     </div>
-                </nav>
+                </div>
             </header>
             <main>
                 <div class="body d-flex justify-content-around">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="card">
-                                <a href="#"><img class="card-img-top" src="../images/cabbage.jpg" alt="Card image cap"></a>
+                                <a href="#jumbotron-1"><img class="card-img-top" src="../images/jack-invictus.png" alt="Card image cap"></a>
                                 <div class="card-body text-white bg-dark">
-                                    <h4 class="card-title">Card title</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h4 class="card-title">Picture of me and my teammates</h4>
+                                    <p class="card-text">Here's the picture of me and my teammates</p>
                                 </div>
                             </div>
                         </div>
@@ -58,23 +51,50 @@
                                 <div class="card">
                                     <a href="#"><img class="card-img-top" src="../images/cabbage.jpg" alt="Card image cap"></a>
                                     <div class="card-body text-white bg-dark">
-                                        <h4 class="card-title">Card title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h4 class="card-title">Title</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin odio felis, laoreet sit amet ultricies ac, varius id sapien.</p>
                                     </div>
                                 </div>
                             </div>
                         <div class="col-md-4">
                             <div class="card">
-                                <a href="#"><img class="card-img-top" src="../images/cabbage.jpg" alt="Card image cap"></a>
+                                <a href="#form"><img class="card-img-top" src="../images/cabbage.jpg" alt="Card image cap"></a>
                                 <div class="card-body text-white bg-dark">
-                                    <h4 class="card-title">Card title</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h4 class="card-title">Form</h4>
+                                    <p class="card-text">contact form</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="body d-flex justify-content-around">
+                    <div class="row">
+                        <div class="jumbotron jumbotron-fluid text-white bg-dark">
+                            <h1 class="display-3 d-flex justify-content-center"><a name="jumbotron-1">Content</a></h1>
+                            <img src="../images/jack-invictus.png" class="img-fluid" alt="picture of jack and teammates">
+                            <p class="lead d-flex justify-content-center">Here's the only picture of me that's ended up on the gym Facebook page apparently</p>
+                        </div>
+                    </div>
+                </div>
             </main>
-        </div>
+            <form class="bg-dark">
+                <div class="form-group">
+                    <label for="exampleInputEmail1"><a name="form">Email address</a></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">
+                        Check me out
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div> <!-- /container -->
     </body>
 </html>
