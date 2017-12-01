@@ -7,7 +7,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="../public_html/documentation/style.css"/>
         <!-- jQuery Form, Additional Methods, Validate -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
@@ -16,9 +15,10 @@
         <script src="js/form-validate.js"></script>
         <!-- Google reCAPTCHA -->
         <script src='https://www.google.com/recaptcha/api.js'></script>
+        <link rel="stylesheet" type="text/css/" href="style.css"/>
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <header>
                 <!--<div class="jumbotron jumbotron-fluid text-white bg-dark">
                     <h1 class="display-3 d-flex justify-content-center">Hello, world!</h1>
@@ -28,7 +28,7 @@
                 <div class="body d-flex justify-content-around">
                     <div class="row">
                         <div class="jumbotron jumbotron-fluid text-white bg-dark bg" id="header-jumbotron">
-                            <img src="../images/jack-invictus.png" class="img-fluid" alt="picture of jack and teammates">
+                            <img src="../images/jack-invictus-purpleish.png" class="img-fluid" alt="picture of jack and teammates">
                             <h1 class="display-3 d-flex justify-content-center">Hello, world!</h1>
                             <p class="lead" id="header-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin odio felis, laoreet sit amet ultricies ac, varius id sapien. Praesent tristique condimentum mauris, quis vulputate nulla volutpat et. Donec purus orci, eleifend ac porttitor et, sodales a urna. Praesent molestie ut nisl ut facilisis.</p>
                         </div>
@@ -40,7 +40,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="card">
-                                <a href="#jumbotron-1"><img class="card-img-top" src="../images/jack-invictus.png" alt="Card image cap"></a>
+                                <a href="#jumbotron-1"><img class="card-img-top" src="../images/jack-invictus-purpleish.png" alt="Card image cap"></a>
                                 <div class="card-body text-white bg-dark">
                                     <h4 class="card-title">Picture of me and my teammates</h4>
                                     <p class="card-text">Here's the picture of me and my teammates</p>
@@ -49,7 +49,7 @@
                         </div>
                             <div class="col-md-4">
                                 <div class="card">
-                                    <a href="#"><img class="card-img-top" src="../images/cabbage.jpg" alt="Card image cap"></a>
+                                    <a href="#jumbotron-2"><img class="card-img-top" src="../images/jack-invictus-purpleish.png" alt="Card image cap"></a>
                                     <div class="card-body text-white bg-dark">
                                         <h4 class="card-title">Title</h4>
                                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin odio felis, laoreet sit amet ultricies ac, varius id sapien.</p>
@@ -60,8 +60,8 @@
                             <div class="card">
                                 <a href="#form"><img class="card-img-top" src="../images/cabbage.jpg" alt="Card image cap"></a>
                                 <div class="card-body text-white bg-dark">
-                                    <h4 class="card-title">Form</h4>
-                                    <p class="card-text">contact form</p>
+                                    <h4 class="card-title">a</h4>
+                                    <p class="card-text">a</p>
                                 </div>
                             </div>
                         </div>
@@ -69,32 +69,77 @@
                 </div>
                 <div class="body d-flex justify-content-around">
                     <div class="row">
-                        <div class="jumbotron jumbotron-fluid text-white bg-dark">
+                        <div class="jumbotron text-white bg-dark">
                             <h1 class="display-3 d-flex justify-content-center"><a name="jumbotron-1">Content</a></h1>
-                            <img src="../images/jack-invictus.png" class="img-fluid" alt="picture of jack and teammates">
+                            <img src="../images/jack-invictus-purpleish.png" class="img-fluid" alt="picture of jack and teammates">
+                            <p class="lead d-flex justify-content-center">Here's the only picture of me that's ended up on the gym Facebook page apparently</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="body d-flex justify-content-around">
+                    <div class="row">
+                        <div class="jumbotron jumbotron-fluid text-white bg-dark">
+                            <h1 class="display-3 d-flex justify-content-center"><a name="jumbotron-2">Content</a></h1>
+                            <img src="../images/jack-invictus-purpleish.png" class="img-fluid" alt="picture of jack and teammates">
                             <p class="lead d-flex justify-content-center">Here's the only picture of me that's ended up on the gym Facebook page apparently</p>
                         </div>
                     </div>
                 </div>
             </main>
-            <form class="bg-dark">
-                <div class="form-group">
-                    <label for="exampleInputEmail1"><a name="form">Email address</a></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <div class="container-fluid">
+                <!-- borrowed from rochelle -->
+                <form id="contact-form" action="php/mailer.php" method="post" class="">
+                    <div class="form-group">
+                        <label for="name">Name <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </div>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-comment" aria-hidden="true"></i>
+                            </div>
+                            <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message (2000 characters max)"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- reCAPTCHA -->
+                    <div class="g-recaptcha" data-sitekey="6LfPpToUAAAAABkSoaU3MwVmbYmBzP9hTh_POEg8"></div>
+
+                    <button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+                    <button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
+                </form>
+
+                <!--empty area for form error/success output-->
+                <div class="row">
+                    <div class="col">
+                        <div id="output-area"></div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input">
-                        Check me out
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            </div>
         </div> <!-- /container -->
     </body>
 </html>
