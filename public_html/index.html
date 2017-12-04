@@ -3,11 +3,12 @@
     <head lang="en-US">
         <title>About Jack</title>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="css/styles.css" type="text/css"/>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"  crossorigin="anonymous">
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
@@ -21,7 +22,7 @@
         <!-- i can't make my stylesheet work and it's really fucking annoying -->
         <header class="bg-white">
             <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand">Jack's Links</a>
+                <a class="navbar-brand">Jack Arnold</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -77,57 +78,57 @@
         </main>
         <footer>
             <div class="container-fluid" id="form-container">
-            <form id="contact-form" action="php/mailer.php" method="post" class="">
-                <div class="form-group">
-                    <label for="name">Name <span class="text-danger">*</span></label>
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <i class="fa fa-user" aria-hidden="true"></i>
+                <form id="contact-form" action="php/mailer.php" method="post" class="">
+                    <div class="form-group">
+                        <label for="name">Name <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                         </div>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email <span class="text-danger">*</span></label>
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <div class="form-group">
+                        <label for="email">Email <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                         </div>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </div>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
                         </div>
-                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message <span class="text-danger">*</span></label>
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <i class="fa fa-comment" aria-hidden="true"></i>
+                    <div class="form-group">
+                        <label for="message">Message <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-comment" aria-hidden="true"></i>
+                            </div>
+                            <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message (2000 characters max)"></textarea>
                         </div>
-                        <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message (2000 characters max)"></textarea>
                     </div>
-                </div>
 
-                <!-- reCAPTCHA -->
-                <div class="g-recaptcha" data-sitekey="6LfPpToUAAAAABkSoaU3MwVmbYmBzP9hTh_POEg8"></div>
+                    <!-- reCAPTCHA -->
+                    <div class="g-recaptcha" data-sitekey="6LfPpToUAAAAABkSoaU3MwVmbYmBzP9hTh_POEg8"></div>
 
-                <button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
-                <button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
-            </form>
+                    <button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+                    <button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
+                </form>
 
-            <!--empty area for form error/success output-->
-            <div class="row">
-                <div class="col">
-                    <div id="output-area"></div>
+                <!--empty area for form error/success output-->
+                <div class="row">
+                    <div class="col">
+                        <div id="output-area"></div>
+                    </div>
                 </div>
-            </div>
             </div>
         </footer>
     </body>
