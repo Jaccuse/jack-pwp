@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
-    <head>
+    <head lang="en-US">
         <title>About Jack</title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="css/styles.css" type="text/css"/>
@@ -9,62 +9,68 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+        <!-- Your JavaScript Form Validator -->
+        <script src="js/form-validate.js"></script>
+        <!-- Google reCAPTCHA -->
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     <body>
         <!-- i can't make my stylesheet work and it's really fucking annoying -->
-        <header>
-            <div class="jumbotron" style="
-    background-color: #240b26">
-                <div class="container text-white">
-                    <img src="../images/jack-invictus-purpleish.png" class="img-fluid"/>
+        <header class="bg-white">
+            <div class="jumbotron-fluid text-black bg-white">
+                <div class="container">
+                    <img src="../images/jack-invictus.png" class="img-fluid"/>
                     <h1 class="display-3">sup</h1>
                     <p>blah blah blah</p>
                 </div>
             </div>
         </header>
-        <main class="d-flex justify-content-around">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card"><img class="card-img-top" src="../images/jack-invictus-purpleish.png" alt="Card image cap">
-                        <div class="card-body text-white" style="
-    background-color: #371339">
-                            <h4 class="card-title">Picture of me and my teammates</h4>
-                            <p class="card-text">Here's the only picture of me and my teammates that I can find</p>
+        <main class="body d-flex justify-content-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="../images/invictus-group.png"><img class="card-img-top" src="../images/invictus-group.png" alt="Card image cap"></a>
+                            <div class="card-body text-black">
+                                <h4 class="card-title">Jack's team</h4>
+                                <p class="card-text">This is me with the Invictus Brazilian Jiu-Jitsu team</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../images/jack-invictus-purpleish.png" alt="Card image cap">
-                        <div class="card-body text-white" style="
-                             background-color: #371339">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin odio felis, laoreet sit amet ultricies ac, varius id sapien.</p>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="../images/jack-rafael-knee-shield.png"><img class="card-img-top" src="../images/jack-rafael-knee-shield.png" alt="Card image cap"></a>
+                            <div class="card-body text-black">
+                                <h4 class="card-title">Jack's guard</h4>
+                                <p class="card-text">This is me employing a knee shield guard to prevent my friend Rafael from achieving a dominant position during Jiu-Jitsu training.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../images/cabbage.jpg" alt="Card image cap">
-                        <div class="card-body text-white" style="
-    background-color: #371339">
-                            <h4 class="card-title">a</h4>
-                            <p class="card-text">a</p>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="../images/jack-jerry-spider-guard.png"><img class="card-img-top" src="../images/jack-jerry-spider-guard.png" alt="Card image cap"></a>
+                            <div class="card-body text-black">
+                                <h4 class="card-title">Jack failing to pass a guard</h4>
+                                <p class="card-text">This is me being prevented from achieving a dominant position by my friend Jared.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </main>
         <footer>
-            <form id="contact-form" action="php/mailer.php" method="post">
+            <div class="container-fluid" id="form-container">
+            <form id="contact-form" action="php/mailer.php" method="post" class="">
                 <div class="form-group">
                     <label for="name">Name <span class="text-danger">*</span></label>
                     <div class="input-group">
                         <div class="input-group-addon">
                             <i class="fa fa-user" aria-hidden="true"></i>
                         </div>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="name">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                     </div>
                 </div>
                 <div class="form-group">
@@ -73,7 +79,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                         </div>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="email">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                     </div>
                 </div>
                 <div class="form-group">
@@ -82,7 +88,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                         </div>
-                        <input type="text" class="form-control" id="subject" name="subject" placeholder="subject">
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
                     </div>
                 </div>
                 <div class="form-group">
@@ -91,18 +97,23 @@
                         <div class="input-group-addon">
                             <i class="fa fa-comment" aria-hidden="true"></i>
                         </div>
-                        <textarea class="form-control" rows="5" id="message" name="message" placeholder="message"></textarea>
+                        <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message (2000 characters max)"></textarea>
                     </div>
                 </div>
-                <div class="g-recaptcha" data-sitekey=""></div>
-                <button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> send</button>
-                <button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> reset</button>
+
+                <!-- reCAPTCHA -->
+                <div class="g-recaptcha" data-sitekey="6LfPpToUAAAAABkSoaU3MwVmbYmBzP9hTh_POEg8"></div>
+
+                <button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+                <button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
             </form>
 
+            <!--empty area for form error/success output-->
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col">
                     <div id="output-area"></div>
                 </div>
+            </div>
             </div>
         </footer>
     </body>
