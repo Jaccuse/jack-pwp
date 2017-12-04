@@ -1,8 +1,12 @@
 body {
     margin: 0;
-    background-color: #511453;
+    background-color: #240b26;
 }
 
 .jumbotron-fluid {
     background-color: #371339;
+}
+
+.card {
+    border: 0;
 }
