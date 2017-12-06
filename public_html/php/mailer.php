@@ -31,7 +31,7 @@ try {
     $swiftMessage->setSubject($subject);
     $swiftMessage->setBody($message, "text/html");
     $swiftMessage->addPart(html_entity_decode($message), "text/plain");
-    $smtp = new Swift_SmtpTransport("localhost", 25);
+    $smtp = new Swift_SmtpTransport("mail.jaccuse.site", 26);
     $mailer = new Swift_Mailer($smtp);
     $numSent = $mailer->send($swiftMessage, $failedRecipients);
 
