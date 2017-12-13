@@ -31,3 +31,18 @@ Your Milestone 2a passes at [Tier II](https://bootcamp-coders.cnm.edu/projects/p
 ### Edits &amp; Suggestions
 - Move your `/images` directory inside `public_html/documentation`. When you begin building your PWP, those images will do inside a `public_html/imgaes` directory.
 - Avoid absolute links to internal assets (see lines 12,13 in HTML). Use _relative_ links instead. More info here: [MDN: Absolute vs Relative URLs](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL#Absolute_URLs_vs_relative_URLs)
+
+## PWP Final Feedback
+Nice work on a very simple layout and theme. The contact form appears to work fine, please check your email for my test message. Overall your HTML, CSS, and JS code looks good. There are a couple of minor technical points I've highlighted under Edits &amp; Suggestions below.
+
+Your PWP passes at [Tier II](https://bootcamp-coders.cnm.edu/projects/personal/rubric/). Your overall grade across all of your PWP Milestones is 22/40 points. Please know that due to the 4-Tier evaluation rubric, 20/40 is considered a passing score.
+
+- Milestone 1 - 20%: Tier III 30(0.2) = 6
+- Milestone 2a - 20%: Tier II 20(0.2) = 4
+- Milestone 2b - 10%: Tier II 20(0.1) = 2
+- Milestone 3 - 50%: Tier II 20(0.5) = 10
+
+### Edits &amp; Suggestions
+- "xmlns" is not needed on the opening <html> tag. This is for XHTML, and we're using HTML5. This might have been autopopulated by PhpStorm.
+- Remember to integrate meaningful `alt` text for every image. This is important for accessibility, and is useful for Search Engine indexing.
+- Suggestion: More visual consistency might be achieved by having the card images be the same size/dimension.
